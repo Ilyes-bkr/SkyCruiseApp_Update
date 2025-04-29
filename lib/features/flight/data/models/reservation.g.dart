@@ -18,6 +18,17 @@ ReservationModel _$ReservationModelFromJson(Map<String, dynamic> json) =>
           .toList(),
     );
 
+Map<String, dynamic> _$ReservationModelToJson(ReservationModel instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'flight': instance.flight.toJson(),
+      'date': instance.date,
+      'status': instance.status,
+      'number': instance.number,
+      'reservation_seats':
+          instance.reservationSeats.map((e) => e.toJson()).toList(),
+    };
+
 ReservationSeatModel _$ReservationSeatModelFromJson(
         Map<String, dynamic> json) =>
     ReservationSeatModel(

@@ -33,9 +33,11 @@ class FlightModel {
     required this.travelInsurancePrice,
     required this.taxPrice,
   });
-
   factory FlightModel.fromJson(Map<String, dynamic> json) =>
       _$FlightModelFromJson(json);
+
+  Map<String, dynamic> toJson() => _$FlightModelToJson(this);
+
 
   FlightEntity toFlightEntity() => FlightEntity(
         id: id,
@@ -66,6 +68,8 @@ class FlightDetailsModel {
 
   factory FlightDetailsModel.fromJson(Map<String, dynamic> json) =>
       _$FlightDetailsModelFromJson(json);
+
+  Map<String, dynamic> toJson() => _$FlightDetailsModelToJson(this);
 
   FlightDetailsEntity toFlightDetailsEntity() => FlightDetailsEntity(
         airport: airport.toAirportEntity(),

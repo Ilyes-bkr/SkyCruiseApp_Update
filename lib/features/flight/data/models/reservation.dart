@@ -54,6 +54,7 @@ class ReservationSeatModel {
 
   factory ReservationSeatModel.fromJson(Map<String, dynamic> json) =>
       _$ReservationSeatModelFromJson(json);
+  Map<String, dynamic> toJson() => _$ReservationSeatModelToJson(this);
 
   ReservationSeatEntity toReservationSeatEntity() => ReservationSeatEntity(
       id: id,

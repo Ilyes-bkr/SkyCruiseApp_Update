@@ -31,6 +31,7 @@ class ReservationSeatRequestBody {
     required this.seatNumber,
     required this.seatClass,
   });
-
+  factory ReservationSeatRequestBody.fromJson(Map<String, dynamic> json) =>
+      _$ReservationSeatRequestBodyFromJson(json);
   Map<String, dynamic> toJson() => _$ReservationSeatRequestBodyToJson(this);
 }

@@ -1,6 +1,6 @@
 class ApiConstants {
   static const String apiBaseUrl =
-      "https://skycruiseapi-production.up.railway.app/api/";
+      "http://192.168.1.44:8000/api/";
   static const storageBaseUrl = 'https://res.cloudinary.com/dxinptjyq/';
   static const String stripeBaseUrl = "https://api.stripe.com/v1/";
 

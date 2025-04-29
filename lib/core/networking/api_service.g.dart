@@ -13,7 +13,7 @@ class _ApiService implements ApiService {
     this._dio, {
     this.baseUrl,
   }) {
-    baseUrl ??= 'https://skycruiseapi-production.up.railway.app/api/';
+    baseUrl ??= 'http://192.168.1.44:8000/api/';
   }
 
   final Dio _dio;
